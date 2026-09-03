@@ -20,4 +20,8 @@ cliente.enderecos.push({
     apartamento: false,
 });
 
-console.log(cliente.enderecos);
+const listaApenasApartamentos = cliente.enderecos.filter (
+(endereco) => endereco.apartamento === true
+);
+
+console.log(listaApenasApartamentos);
