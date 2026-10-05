@@ -1,4 +1,4 @@
-const clientes = require("./cliente.json");
+const clientes = require("./clientes.json");
 
 function ordenar(lista, propriedade){
     const resultado = lista.sort((a, b) => {
@@ -12,3 +12,7 @@ function ordenar(lista, propriedade){
     });
       return resultado;
 }
+
+const ordenadoNome = ordenar(clientes,"nome");
+
+console.log(ordenadoNome);
